@@ -41,14 +41,11 @@ const getSingleTask=async(req,res)=>{
         {
             res.status(200).json({task});
         }
-       
     }
-   
    catch(err)
    {
     res.status(500).json({error:err.message});
    }
-    res.json({id:req.params.id})
 }
 
 const updateTask=(req,res)=>{
